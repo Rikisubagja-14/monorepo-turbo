@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "5d6efd32-2a3f-4a26-9ea6-db7c7396a352",
+		"name": "Ebuddy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9046065",
+		"_collection_link": "https://speeding-shadow-172519.postman.co/workspace/Management-api~84c994ef-de9a-4b94-afdd-6c3072c0ec69/collection/9046065-5d6efd32-2a3f-4a26-9ea6-db7c7396a352?action=share&source=collection_link&creator=9046065"
+	},
+	"item": [
+		{
+			"name": "Registers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"riki43733@gmail.com\",\n  \"password\": \"riki1234\",\n  \"name\": \"Riki Subagja\",\n  \"phoneNumber\": \"088802147886\",\n  \"address\": \"perumahanbukit\"\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJpNXJ0Y3VraWphZFZ3RHJFakNtdkRaSk9SR1YyIiwiaWF0IjoxNzM0Nzg4NDgzLCJleHAiOjE3MzQ3OTIwODN9.W0FtbCYqGgJ7PLh3snMaDQ6TVL0SDLw2_lv1D1VvpPs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"maladadjf@gmail.com\",\n  \"password\": \"riki1234\",\n  \"name\": \"hahahahha ok\",\n  \"phoneNumber\": \"088802147886\",\n  \"address\": \"perumahanbukit\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/users-update/dW5l3PCdyNhEH9l9Ke3oB89SUkD2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"users-update",
+						"dW5l3PCdyNhEH9l9Ke3oB89SUkD2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"maladadjf@gmail.com\",\n  \"password\": \"riki1234\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allusers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJpNXJ0Y3VraWphZFZ3RHJFakNtdkRaSk9SR1YyIiwiaWF0IjoxNzM0Nzg4NDgzLCJleHAiOjE3MzQ3OTIwODN9.W0FtbCYqGgJ7PLh3snMaDQ6TVL0SDLw2_lv1D1VvpPs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allusersById",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJpNXJ0Y3VraWphZFZ3RHJFakNtdkRaSk9SR1YyIiwiaWF0IjoxNzM0Nzg4NDgzLCJleHAiOjE3MzQ3OTIwODN9.W0FtbCYqGgJ7PLh3snMaDQ6TVL0SDLw2_lv1D1VvpPs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/users/azrZJD6LaqdWaMarVSKmbO18AY93",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"users",
+						"azrZJD6LaqdWaMarVSKmbO18AY93"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleted Users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJaRGdBSGRYSDE2Y0h6YmU1UVhKYk44NEJ5SUQzIiwiaWF0IjoxNzM0NzkxMjg0LCJleHAiOjE3MzQ3OTQ4ODR9.YtW-nXxjjh6l3rsoZ8X-C4DzT6O9nJRUhG5TOBj3MLg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/users/ZDgAHdXH16cHzbe5QXJbN84ByID3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"users",
+						"ZDgAHdXH16cHzbe5QXJbN84ByID3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

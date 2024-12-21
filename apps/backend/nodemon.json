@@ -1,0 +1,5 @@
+{
+  "exec": "ts-node ./core/index.ts",
+  "watch": ["./core", "./controller", "./middleware", "./repository", "./routes"],
+  "ext": "ts"
+}
